@@ -1,0 +1,24 @@
+{
+	"name": "Scheduletrigger",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "01-Copy-SQL-Pool",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 5,
+				"startTime": "2025-03-19T05:01:00",
+				"timeZone": "Sri Lanka Standard Time"
+			}
+		}
+	}
+}
